@@ -14,6 +14,8 @@
 		210A8C481B51D579003B25C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210A8C471B51D579003B25C9 /* Images.xcassets */; };
 		210A8C4B1B51D579003B25C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210A8C491B51D579003B25C9 /* LaunchScreen.xib */; };
 		210A8C571B51D579003B25C9 /* BarcodeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A8C561B51D579003B25C9 /* BarcodeTestTests.swift */; };
+		210A8C611B51D65B003B25C9 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A8C601B51D65B003B25C9 /* BarcodeViewController.swift */; };
+		4A20269861DE2153B21C4AF7 /* Pods_BarcodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4BA143147D0FBFE5C68C71 /* Pods_BarcodeTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		210A8C501B51D579003B25C9 /* BarcodeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		210A8C551B51D579003B25C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		210A8C561B51D579003B25C9 /* BarcodeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeTestTests.swift; sourceTree = "<group>"; };
+		210A8C601B51D65B003B25C9 /* BarcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		27DF4042C7D87D83AA221D5B /* Pods-BarcodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarcodeTest/Pods-BarcodeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4D4BA143147D0FBFE5C68C71 /* Pods_BarcodeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarcodeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0278DD6055590F35912509 /* Pods-BarcodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarcodeTest/Pods-BarcodeTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A20269861DE2153B21C4AF7 /* Pods_BarcodeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +71,8 @@
 				210A8C3B1B51D579003B25C9 /* BarcodeTest */,
 				210A8C531B51D579003B25C9 /* BarcodeTestTests */,
 				210A8C3A1B51D579003B25C9 /* Products */,
+				ECA9B213A1AABCDB61B21EB3 /* Pods */,
+				DEC3DE620158B037BC6AE48F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				210A8C3E1B51D579003B25C9 /* AppDelegate.swift */,
+				210A8C601B51D65B003B25C9 /* BarcodeViewController.swift */,
 				210A8C401B51D579003B25C9 /* FirstViewController.swift */,
 				210A8C421B51D579003B25C9 /* SecondViewController.swift */,
 				210A8C441B51D579003B25C9 /* Main.storyboard */,
@@ -115,6 +125,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DEC3DE620158B037BC6AE48F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D4BA143147D0FBFE5C68C71 /* Pods_BarcodeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA9B213A1AABCDB61B21EB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27DF4042C7D87D83AA221D5B /* Pods-BarcodeTest.debug.xcconfig */,
+				9B0278DD6055590F35912509 /* Pods-BarcodeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 210A8C5A1B51D579003B25C9 /* Build configuration list for PBXNativeTarget "BarcodeTest" */;
 			buildPhases = (
+				09E82BFE565993F472C2AE13 /* Check Pods Manifest.lock */,
 				210A8C351B51D579003B25C9 /* Sources */,
 				210A8C361B51D579003B25C9 /* Frameworks */,
 				210A8C371B51D579003B25C9 /* Resources */,
+				B7D7954D79D4895A962E43AF /* Embed Pods Frameworks */,
+				FD0BC5EB288AB80A6A003044 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,12 +240,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09E82BFE565993F472C2AE13 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7D7954D79D4895A962E43AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarcodeTest/Pods-BarcodeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0BC5EB288AB80A6A003044 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarcodeTest/Pods-BarcodeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		210A8C351B51D579003B25C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				210A8C431B51D579003B25C9 /* SecondViewController.swift in Sources */,
+				210A8C611B51D65B003B25C9 /* BarcodeViewController.swift in Sources */,
 				210A8C3F1B51D579003B25C9 /* AppDelegate.swift in Sources */,
 				210A8C411B51D579003B25C9 /* FirstViewController.swift in Sources */,
 			);
@@ -344,6 +423,7 @@
 		};
 		210A8C5B1B51D579003B25C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27DF4042C7D87D83AA221D5B /* Pods-BarcodeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BarcodeTest/Info.plist;
@@ -354,6 +434,7 @@
 		};
 		210A8C5C1B51D579003B25C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0278DD6055590F35912509 /* Pods-BarcodeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BarcodeTest/Info.plist;
@@ -415,6 +496,7 @@
 				210A8C5C1B51D579003B25C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		210A8C5D1B51D579003B25C9 /* Build configuration list for PBXNativeTarget "BarcodeTestTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +505,7 @@
 				210A8C5F1B51D579003B25C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
