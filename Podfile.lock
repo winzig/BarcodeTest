@@ -1,13 +1,10 @@
 PODS:
   - MTBBarcodeScanner (1.6.1)
-  - PermissionScope (0.7)
 
 DEPENDENCIES:
   - MTBBarcodeScanner
-  - PermissionScope
 
 SPEC CHECKSUMS:
   MTBBarcodeScanner: beda75d4c1e2750405f62ee53f7a7ee40bf6825b
-  PermissionScope: 1d27791185cca10c26f84d1aab905117dde50f39
 
 COCOAPODS: 0.37.2

@@ -49,9 +49,7 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'MTBBarcodeScanner.framework'
-  install_framework 'PermissionScope.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'MTBBarcodeScanner.framework'
-  install_framework 'PermissionScope.framework'
 fi

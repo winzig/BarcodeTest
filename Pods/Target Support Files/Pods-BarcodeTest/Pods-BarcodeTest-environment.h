@@ -12,9 +12,3 @@
 #define COCOAPODS_VERSION_MINOR_MTBBarcodeScanner 6
 #define COCOAPODS_VERSION_PATCH_MTBBarcodeScanner 1
 
-// PermissionScope
-#define COCOAPODS_POD_AVAILABLE_PermissionScope
-#define COCOAPODS_VERSION_MAJOR_PermissionScope 0
-#define COCOAPODS_VERSION_MINOR_PermissionScope 7
-#define COCOAPODS_VERSION_PATCH_PermissionScope 0
-
